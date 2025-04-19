@@ -1,0 +1,44 @@
+/* Center align text in the app */
+.App {
+  text-align: center;
+}
+
+/* App logo style */
+.App-logo {
+  height: 40vmin; /* Adjust logo size based on viewport */
+  pointer-events: none; /* Prevent interaction with the logo */
+}
+
+/* Logo spin animation when preferred motion is not reduced */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Continuous rotation */
+  }
+}
+
+/* Header styles - dark background and center alignment */
+.App-header {
+  background-color: #282c34; /* Dark background for the header */
+  min-height: 100vh; /* Full viewport height */
+  display: flex; /* Flexbox layout for alignment */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align horizontally */
+  justify-content: center; /* Center align vertically */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white; /* White text */
+}
+
+/* Link styles */
+.App-link {
+  color: #61dafb; /* Light blue color for links */
+}
+
+/* Animation keyframes for rotating the logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Start from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate 360 degrees */
+  }
+}
